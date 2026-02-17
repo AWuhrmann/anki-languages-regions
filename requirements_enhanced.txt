@@ -1,0 +1,27 @@
+# Enhanced Language-Regions Flashcard Generator
+# Additional requirements for metadata enhancement
+
+# Existing requirements
+genanki>=0.13.0
+matplotlib
+cartopy
+shapely
+numpy
+requests
+geopy
+scikit-learn
+
+# New requirements for enhanced metadata
+# (These were likely already needed but making explicit)
+pathlib  # Built into Python 3.4+, but good to note
+datetime  # Built into Python, but good to note
+json  # Built into Python, but good to note
+
+# Optional but recommended for better data fetching
+urllib3>=1.26.0  # For better HTTP handling
+retrying>=1.3.3  # For retrying failed API calls
+
+# For potential future enhancements
+pandas>=1.3.0  # For better data analysis and CSV handling
+pycountry>=20.7.3  # For country code normalization
+langdetect>=1.0.9  # For language detection if needed
