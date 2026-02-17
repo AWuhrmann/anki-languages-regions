@@ -388,13 +388,8 @@ def main():
     if baq:
         tool.show_language_summary(baq[0])
     
-    # Optional interactive mode
-    try:
-        explore = input("\n❓ Would you like to explore interactively? (y/N): ").strip().lower()
-        if explore in ['y', 'yes']:
-            tool.interactive_explorer()
-    except KeyboardInterrupt:
-        pass
+    # Optional interactive mode (disabled in non-interactive environments)
+    print("\n✅ Demonstration complete! Use 'python3 demo_comprehensive.py' with input for interactive mode.")
     
     print("\n✅ Demonstration complete!")
 
